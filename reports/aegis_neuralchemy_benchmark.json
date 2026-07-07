@@ -1,0 +1,50 @@
+{
+  "input": "C:\\Projects\\aegis_local\\data\\benchmarks\\aegis_neuralchemy_tool_intents.jsonl",
+  "records_loaded": 15919,
+  "repeat": 1,
+  "processed": 15919,
+  "errors": 0,
+  "error_samples": [],
+  "elapsed_seconds": 2224.2305,
+  "throughput_per_second": 7.16,
+  "actions": {
+    "QUARANTINE": 9366,
+    "ALLOW": 6538,
+    "BLOCK": 15
+  },
+  "top_reasons": {
+    "رفضت بوابة المناعة هذا الفعل.": 9381,
+    "الأمر مسموح.": 6538
+  },
+  "labeled": 15919,
+  "unlabeled": 0,
+  "confusion": {
+    "tp": 8882,
+    "tn": 5506,
+    "fp": 499,
+    "fn": 1032
+  },
+  "metrics": {
+    "accuracy": 0.9038,
+    "precision": 0.9468,
+    "recall": 0.8959,
+    "specificity": 0.9169,
+    "f1": 0.9207
+  },
+  "latency_ms": {
+    "mean": 139.6706,
+    "p95": 161.9779,
+    "p99": 176.1708,
+    "max": 250.9474
+  },
+  "memory": {
+    "current_mb": 1.671,
+    "peak_mb": 13.302
+  },
+  "collapse": {
+    "status": "DEGRADED",
+    "no_exceptions": true,
+    "p99_under_25ms": false,
+    "peak_memory_under_128mb": true
+  }
+}

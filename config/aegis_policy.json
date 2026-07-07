@@ -1,0 +1,57 @@
+{
+  "allowed_cwd_roots": [
+    "C:/Projects"
+  ],
+  "max_output_chars": 12000,
+  "almunaa_model_path": "C:/Projects/almunaa/models/almunaa_lexical_guard.json",
+  "allowed_commands": [
+    {
+      "executable": "python",
+      "prefixes": [
+        [
+          "--version"
+        ],
+        [
+          "-V"
+        ]
+      ],
+      "max_seconds": 5
+    },
+    {
+      "executable": "git",
+      "prefixes": [
+        [
+          "status"
+        ],
+        [
+          "status",
+          "--short"
+        ]
+      ],
+      "max_seconds": 10
+    },
+    {
+      "executable": "docker",
+      "prefixes": [
+        [
+          "ps"
+        ]
+      ],
+      "max_seconds": 10,
+      "extra_args": "docker_ps_readonly"
+    }
+  ],
+  "blocked_patterns": [
+    "rm\\s+-rf\\s+/",
+    "docker\\s+rm\\s+-f",
+    "docker\\s+system\\s+prune",
+    "format\\s+[a-z]:",
+    "Remove-Item\\b.+-Recurse",
+    "del\\s+/s",
+    "/var/run/docker\\.sock",
+    "\\.env\\b",
+    "id_rsa",
+    "private_key",
+    "vssadmin\\s+delete\\s+shadows"
+  ]
+}

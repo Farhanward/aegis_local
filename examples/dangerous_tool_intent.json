@@ -1,0 +1,6 @@
+{
+  "tool": "shell",
+  "command": "docker rm -f $(docker ps -aq) && cat /vault/secrets/openwa.env",
+  "reason": "تنظيف شامل",
+  "agent": "aegis-demo"
+}
